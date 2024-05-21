@@ -13,17 +13,18 @@ import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
 // import App from "./animation"
+import { ArrowRightOutlined } from "@ant-design/icons";
 
 function App() {
-
   const handleBuyNowClick = () => {
-    window.location.href = "https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891";
+    window.location.href =
+      "https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891";
   };
 
   const handlePurchaseNowClick = () => {
-    window.location.href = "https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891";
+    window.location.href =
+      "https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891";
   };
-
 
   return (
     <div className="main-container">
@@ -35,7 +36,9 @@ function App() {
           </div>
         </Col>
         <Col>
-          <Button className="buyNow" onClick={handleBuyNowClick}>Buy now</Button>
+          <Button className="buyNow" onClick={handleBuyNowClick}>
+            Buy now
+          </Button>
         </Col>
       </Row>
       <div>
@@ -82,18 +85,21 @@ function App() {
             <img src={logo} />
             <img className="rating_img" src={rating} />
           </Row>
+          {/* <div style={{color: "white"}}>4.5 Score, 9 Reviews</div> */}
         </Col>
         <Col>
           <Row className="logoimg">
             <img src={logo2} />
             <img className="rating_img" src={rating} />
           </Row>
+          {/* <div>4.5 Score, 9 Reviews</div> */}
         </Col>
         <Col>
           <Row className="logoimg">
             <img src={logo3} />
             <img className="rating_img" src={rating} />
           </Row>
+          {/* <div>4.5 Score, 9 Reviews</div> */}
         </Col>
       </Row>
 
@@ -108,7 +114,9 @@ function App() {
               you to effortlessly infuse your website with visually stunning
               motion art elements.
             </div>
-            <Button className="envatoButton" onClick={handlePurchaseNowClick}>Purchase From Envato</Button>
+            <Button className="envatoButton" onClick={handlePurchaseNowClick}>
+              Purchase From Envato <ArrowRightOutlined />
+            </Button>
           </div>
         </Col>
         <Col>
@@ -122,12 +130,12 @@ function App() {
           Apply On Any Section Or Enable For Whole Page
         </div>
         <Row className="sectionPage">
-          <Col  xs={24} lg={10} md={10} sm={10} xl={10}>
+          <Col xs={24} lg={10} md={10} sm={10} xl={10}>
             <div className="sectioncContainer">
               <div className="sectionPageHeading" style={{ color: "white" }}>
                 Apply On Section
               </div>
-              <div className="sectionPageContent" style={{ color: "white"}}>
+              <div className="sectionPageContent" style={{ color: "white" }}>
                 Apply on section is a game-changer, offering an unparalleled way
                 to manage applications directly from your website.
               </div>
@@ -136,7 +144,7 @@ function App() {
               </div>
             </div>
           </Col>
-          <Col xs={24} lg={10}  md={10} sm={10} xl={10}>
+          <Col xs={24} lg={10} md={10} sm={10} xl={10}>
             <div className="sectioncContainer" style={{ marginTop: "15%" }}>
               <div className="sectionPageHeading" style={{ color: "white" }}>
                 Apply On Page
