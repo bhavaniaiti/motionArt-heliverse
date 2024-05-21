@@ -1,0 +1,443 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.main-container {
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* >>>>>>>>>>>>>>>>header>>>>>>>>>>>>>>>>> */
+
+.header {
+  justify-content: space-between;
+  height: 70px;
+  background-color: #262626;
+  color: white;
+  align-items: center;
+  padding: 0 2%;
+}
+
+.headerLogo {
+  display: flex;
+}
+
+.logo {
+  height: 40px;
+}
+.companyName {
+  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.buyNow {
+  background-color: #90d26d;
+  width: 90px;
+  height: 31px;
+}
+
+/* >>>>>>>>>>>>>>>motionarteffect>>>>>>>>>>>> */
+
+.motionArtEffect-container {
+  /* border: 2px solid white; */
+  justify-content: space-between;
+  padding: 2% 0 2% 0;
+  margin: 0 10%;
+
+  @media (max-width: 600px) {
+    margin: 0 0;
+  }
+}
+
+.motionArtEffect img {
+  height: 50px;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    height: 40px;
+  }
+}
+
+.purchaseNow {
+  background-color: whitesmoke;
+  color: black;
+  height: 53px;
+  width: 180px;
+  font-size: 22px;
+
+  @media (max-width: 1025px) {
+    display: none;
+  }
+}
+
+/* >>>>>>>>>>>>>> attract your visitor >>>>>>>>>>> */
+
+/* .trabsformdiv{
+  width: fit-content;
+  @media (max-width: 600px) {
+ 
+    width: 100%;
+   }
+} */
+.frontpage {
+  /* border: 2px solid white; */
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 2% 0;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+
+.transform {
+  /* border: 2px solid white; */
+  padding-left: 4%;
+
+  /* display: block; */
+  width: 300px;
+  /* align-content: center; */
+  margin-left: 6%;
+
+  @media (max-width: 600px) {
+    /* width: 100%; */
+  }
+}
+
+.attract {
+  /* border: 2px solid white; */
+  width: 700px;
+  text-align: start;
+  margin-left: 8%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.text1 {
+  color: white;
+  font-size: 26px;
+  width: 162px;
+  /* border: 2px solid white; */
+  text-align: start;
+  margin-bottom: 10%;
+  background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: 600px) {
+    width: 160px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.text2 {
+  color: white;
+  font-size: 26px;
+  width: 150px;
+  margin-top: 5%;
+  text-align: start;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.text3 h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  /* margin: 0 10px 15px 0; */
+
+  span {
+    background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 35px;
+    line-height: 1.7;
+  }
+}
+
+/* >>>>>>>>>>>>>>review and purchase from envato>>>>>>>>>>>> */
+
+.reviewContainer {
+  /* border: 2px solid white; */
+  padding: 5% 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.rating {
+  color: #eee5ff;
+  font-size: 40px;
+  margin-top: 3%;
+  text-align: center;
+  /* border: 2px solid white; */
+  /* padding-bottom: 4%; */
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+}
+
+.ratingImg {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid white; */
+
+  @media (max-width: 600px) {
+    display: inline-block;
+    /* padding: 15% 0; */
+  }
+}
+
+.logoimg {
+  padding: 2% 0;
+  align-items: center;
+  @media (max-width: 600px) {
+    /* display: inline-block; */
+    /* padding: 12% 0; */
+  }
+}
+
+.rating_img {
+  height: 25px;
+  margin-left: 10px;
+}
+
+.purchaseEnvatoContainer {
+  color: #eee5ff;
+  text-align: start;
+  padding: 5%;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.purchaseEnvato {
+  font-size: 40px;
+  font-weight: 500;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
+.purchaseEnvatoPara {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 2% 0;
+  line-height: 1.8;
+
+  @media (max-width: 600px) {
+    padding: 3% 5%;
+  }
+}
+
+.envatoButton {
+  width: 350px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-top: 5%;
+  background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%) !important;
+  /* color: #000 !important; */
+  border: 1px solid black !important;
+  -webkit-background-clip: background-color;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+/* >>>>>>>>>>>>>>> section page >>>>>>>>>>>> */
+
+.applySection {
+  color: #eee5ff;
+  margin: 4% 0;
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+    padding: 0 3%;
+  }
+}
+
+.sectionPage {
+  justify-content: space-around;
+  margin: 4%;
+}
+
+.sectioncContainer {
+  /* border: 2px solid white; */
+  background-color: #161a30;
+  padding: 5%;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+
+.sectionPageHeading {
+  font-size: 25px;
+  color: #eee5ff;
+  text-align: start;
+  font-weight: 500;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.sectionPageContent {
+  font-size: 18px;
+  color: #eee5ff;
+  font-weight: 300;
+  text-align: start;
+  padding: 2% 0;
+  /* width: 800px; */
+  margin-bottom: 3%;
+
+  /* padding: 2% 5%; */
+
+  @media (max-width: 600px) {
+    text-align: center;
+    padding: 5% 0;
+  }
+}
+
+.sectionPageImg img {
+  @media (max-width: 600px) {
+    width: 300px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>support websites>>>>>>>>>>>>>> */
+
+.supportContainer {
+  background-color: #161a30;
+  border-radius: 20px;
+  padding: 2% 0;
+  margin: 4% 7%;
+  @media (max-width: 600px) {
+    margin: 7% 6%;
+  }
+}
+
+.supportByHeading {
+  color: #eee5ff;
+  font-size: 40px;
+  /* padding: 2%; */
+  /* margin-top: 3%; */
+  /* padding-top: 2%; */
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+.supportedByContent {
+  color: #eee5ff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 2% 0;
+  /* max-width: 550px; */
+  /* align-items: center; */
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
+}
+
+.websiteImg img {
+  @media (max-width: 600px) {
+    width: 80%;
+    padding: 2%;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>all round plugins >>> ?>>>>>>>>>>*/
+
+.pluginsPara {
+  color: #eee5ffbd;
+  font-size: 20px;
+  width: 50%;
+  font-weight: 300;
+  line-height: 1.8;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 2% 6%;
+  }
+}
+.pluginsFeatures {
+  background-color: #161a30;
+  text-align: start;
+  border-radius: 20px;
+  color: #eee5ff;
+  padding: 2%;
+}
+
+/* >>>>>>>>>>>>fotter>>>>>>>>>>>>> */
+
+.fotterRow {
+  background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
+  -webkit-background-clip: background-color;
+
+  color: #eee5ff;
+  align-items: center;
+  padding: 0% 8%;
+  justify-content: space-between;
+
+  .ant-col {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+
+    @media (max-width: 1300px) {
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>> animation >>>>>>>>>*/
+
+
+i {
+  position: fixed;
+  background-color: #fff;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(-50% -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--randomx), var(--randomY));
+  }
+}
