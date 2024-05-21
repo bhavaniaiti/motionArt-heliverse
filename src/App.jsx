@@ -85,21 +85,18 @@ function App() {
             <img src={logo} />
             <img className="rating_img" src={rating} />
           </Row>
-          {/* <div style={{color: "white"}}>4.5 Score, 9 Reviews</div> */}
         </Col>
         <Col>
           <Row className="logoimg">
             <img src={logo2} />
             <img className="rating_img" src={rating} />
           </Row>
-          {/* <div>4.5 Score, 9 Reviews</div> */}
         </Col>
         <Col>
           <Row className="logoimg">
             <img src={logo3} />
             <img className="rating_img" src={rating} />
           </Row>
-          {/* <div>4.5 Score, 9 Reviews</div> */}
         </Col>
       </Row>
 
