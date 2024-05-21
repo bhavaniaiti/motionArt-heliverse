@@ -122,12 +122,12 @@ function App() {
           Apply On Any Section Or Enable For Whole Page
         </div>
         <Row className="sectionPage">
-          <Col>
+          <Col  xs={24} lg={10} md={10} sm={10}>
             <div className="sectioncContainer">
               <div className="sectionPageHeading" style={{ color: "white" }}>
                 Apply On Section
               </div>
-              <div className="sectionPageContent" style={{ color: "white" }}>
+              <div className="sectionPageContent" style={{ color: "white"}}>
                 Apply on section is a game-changer, offering an unparalleled way
                 to manage applications directly from your website.
               </div>
@@ -136,7 +136,7 @@ function App() {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col xs={24} lg={10}  md={10} sm={10}>
             <div className="sectioncContainer" style={{ marginTop: "15%" }}>
               <div className="sectionPageHeading" style={{ color: "white" }}>
                 Apply On Page

@@ -327,6 +327,18 @@
   @media (max-width: 600px) {
     width: 300px;
   }
+
+  /* @media (min-width: 500px) {
+    width: 300px;
+  } */
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>support websites>>>>>>>>>>>>>> */
