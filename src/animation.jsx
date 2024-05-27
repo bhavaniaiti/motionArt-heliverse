@@ -18,9 +18,9 @@ class Animation extends React.Component {
       spark.style.setProperty("--randomY", randomY + "px");
 
       const randomSize = Math.random() * 30 + 2;
-      spark.style.width = randomSize + "px";
-      spark.style.height = randomSize + "px";
-      const duration = Math.random() * 2 + 0.5;
+      // spark.style.width = randomSize + "px";
+      // spark.style.height = randomSize + "px";
+      // const duration = Math.random() * 2 + 0.5;
       spark.style.animation = `animate ${duration}s ease-out forwards`;
 
       const colors = ["#f87516", "#5e11ff", "#f4034c", "#03a9f4"];

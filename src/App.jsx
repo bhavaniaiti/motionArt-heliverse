@@ -1,5 +1,5 @@
 import "./App.css";
-import { Row, Col, Button } from "antd";
+import { Row, Col, Button, Carousel } from "antd";
 import logo from "./Logo.png";
 import rating from "./rating.png";
 import logo2 from "./logo2.png";
@@ -25,6 +25,12 @@ function App() {
     window.location.href =
       "https://codecanyon.net/item/motion-art-for-elementor-wordpress-plugin/48826891";
   };
+
+  const reviews = [
+    { src1: logo, src2: logo },
+    { src1: logo2, src2: logo2 },
+    { src1: logo3, src2: logo3 },
+  ];
 
   return (
     <div className="main-container">
@@ -79,26 +85,37 @@ function App() {
       <div className="rating">
         Trusted by thousands of users around the world
       </div>
-      <Row className="reviewContainer" gutter={[50, 70]}>
-        <Col>
-          <Row className="logoimg">
-            <img src={logo} />
-            <img className="rating_img" src={rating} />
+
+      {/* <Carousel autoplaySpeed={1500} autoplay dots={false}> */}
+        {/* {reviews.map((items, index) => (
+          <Row key={index} style={{ width: "100%" }}>
+            <Row style={{ justifyContent: "center" }}>
+              <img src={items.src1} />
+              <img src={items.src2} />
+            </Row>
           </Row>
-        </Col>
-        <Col>
-          <Row className="logoimg">
-            <img src={logo2} />
-            <img className="rating_img" src={rating} />
-          </Row>
-        </Col>
-        <Col>
-          <Row className="logoimg">
-            <img src={logo3} />
-            <img className="rating_img" src={rating} />
-          </Row>
-        </Col>
-      </Row>
+        ))} */}
+        <Row className="reviewContainer" gutter={[50, 70]}>
+          <Col>
+            <Row className="logoimg">
+              <img src={logo} />
+              <img className="rating_img" src={rating} />
+            </Row>
+          </Col>
+          <Col>
+            <Row className="logoimg">
+              <img src={logo2} />
+              <img className="rating_img" src={rating} />
+            </Row>
+          </Col>
+          <Col>
+            <Row className="logoimg">
+              <img src={logo3} />
+              <img className="rating_img" src={rating} />
+            </Row>
+          </Col>
+        </Row>
+      {/* </Carousel> */}
 
       <Row justify={"space-around"}>
         <Col xl={10}>

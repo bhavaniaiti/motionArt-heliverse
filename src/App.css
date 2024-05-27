@@ -288,11 +288,46 @@
 }
 
 .sectioncContainer {
-  /* border: 2px solid white; */
   background-color: #161a30;
   padding: 5%;
   border-radius: 20px;
   line-height: 1.8;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 15px 15px 20px black;
+}
+
+.sectioncContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skew(-30deg);
+  transition: transform 0.2s ease;
+  z-index: 100;
+
+  .sectionPageImg {
+    img :hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
+
+.sectioncContainer:hover::before {
+  left: 260px;
+  transform: skew(-30deg) translateX(750px);
+}
+
+.sectioncContainer:hover {
+  .sectionPageImg {
+    img {
+      transform: scale(1.03);
+    }
+  }
 }
 
 .sectionPageHeading {
@@ -433,7 +468,6 @@
 
 /* >>>>>>>>>>>>>>>>>> animation >>>>>>>>>*/
 
-
 i {
   position: fixed;
   background-color: #fff;
@@ -452,4 +486,53 @@ i {
     opacity: 0;
     transform: translate(var(--randomx), var(--randomY));
   }
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 230px;
+  overflow: hidden;
+  box-shadow: 15px 15px 20px black;
+
+  @media (max-width: 960px) {
+    width: 250px;
+    height: 140px;
+  }
+}
+
+.box img {
+  width: 100%;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skew(-30deg);
+  transition: transform 0.3s ease;
+  z-index: 100;
+
+  .image:hover {
+    transform: scale(1.15);
+  }
+}
+.box::before:hover {
+  .image {
+    transform: scale(1.15);
+  }
+}
+
+.box:hover::before {
+  left: 100px;
+  transform: skew(-30deg) translateX(400px);
+}
+
+.image-title:hover,
+.box:hover .image {
+  transform: scale(1.15);
 }
